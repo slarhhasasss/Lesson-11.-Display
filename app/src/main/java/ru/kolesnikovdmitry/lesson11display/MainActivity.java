@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onMenuItemClick(MenuItem item) {
             switch (item.getItemId()) {
                 case POPUP_MENU_ITEM_SEE_DISPLAY_INFO:
+                    //Получаем размеры экрана:
                     DisplayMetrics metrics = new DisplayMetrics();
                     getWindowManager().getDefaultDisplay().getMetrics(metrics);
                     String strScreen = "";
